@@ -1,0 +1,153 @@
+html, body {
+    margin: 0;
+    padding: 15px;
+}
+
+body,
+.container {
+  display: flex;
+  align-items: center;  
+}
+
+body {
+    justify-content: center;
+    background: #2C4D8E;
+    font-weight: 700;
+    font-size: 1.5rem;
+    background-image: url(../images/water-background.svg);
+    background-size: cover;
+    background-position: center;
+}
+
+.container {
+    flex-direction: column;
+    padding: 1em 2em;
+    border-radius: 10px;
+    background: white;
+}
+
+h2 {
+    color: #2C4D8E;
+    text-align: center;
+}
+
+h3 {
+    margin:0;
+    color: #3B61AB;
+    text-align: center;
+}
+
+img {
+    width: 50px;
+    height: 100px;
+    padding: 5px;
+}
+
+.glass {
+    width: 110px;
+    height: 100px;
+    border-radius: 50px;
+}
+
+.water {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.guage {
+    padding: 20px;
+}
+
+.btn-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+}
+
+.btn {
+    margin: 15px;
+    border: 1px solid rgb(17, 16, 68);
+    border-radius: 25px;
+    padding: 8px 20px;
+    text-decoration: none;
+    color: #272729;
+    background-image: url(../images/btn-background.png);
+    background-color: white;
+    background-blend-mode: darken;
+    font-size: 1.2rem;;
+}
+
+.btn1:hover {
+    box-shadow: 1px 1px 25px 10px #c3edf5;
+}
+
+.btn2:hover{
+    box-shadow: 1px 1px 25px 10px #9dc1ee;
+}
+
+.btn3:hover{
+    box-shadow: 1px 1px 25px 10px #2C9AF3;
+}
+
+meter {
+--background: rgb(225, 222, 222);
+--optimum: #2C9AF3;
+--sub-optimum: #6AA2E6;
+--sub-sub-optimum: #c3edf5;
+
+/* The background in Firefox */
+display: block;
+margin-top: 30px;
+margin-bottom: 1em;
+width: 100%;
+height: 3em;
+}
+
+/* The meter background in Chrome, Safari etc. */
+meter::-webkit-meter-bar {
+background: var(--background);
+}
+
+/* The optimum bar in Firefox */
+meter:-moz-meter-optimum::-moz-meter-bar {
+background: var(--optimum);
+}
+
+/* The optimum bar bar in Chrome etc. */
+meter::-webkit-meter-optimum-value {
+background: var(--optimum);
+}
+
+/* The yellow (sub-optimum) bar in Firefox */
+meter:-moz-meter-sub-optimum::-moz-meter-bar {
+background: var(--sub-optimum);
+}
+
+/* The yellow (sub-optimum) bar in Chrome etc. */
+meter::-webkit-meter-suboptimum-value {
+background: var(--sub-optimum);
+}
+
+/* The red (even less good) bar in Firefox */
+meter:-moz-meter-sub-sub-optimum::-moz-meter-bar {
+background: var(--sub-sub-optimum);
+}
+
+/* The red (even less good) bar in Chrome etc. */
+meter::-webkit-meter-even-less-good-value {
+background: var(--sub-sub-optimum);
+}
+
+@media (min-width: 850px) {
+    body {
+        height: 100vh;
+        padding: 0px;
+     
+    }
+    .btn-container {
+        flex-direction: row;
+    }
+}
+  
